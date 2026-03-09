@@ -23,14 +23,14 @@ cd copilot-cli-demo
 
 ---
 
-## 📌 Section 1 — Getting Started with `gh copilot suggest`
+## 📌 Section 1 — Getting Started Suggestions
 
 **Talking point**: "Instead of Googling shell commands or checking man pages, you can describe what you want in plain English."
 
 ### Demo 1.1 — Basic command suggestion
 
 ```bash
-gh copilot suggest "list all files modified in the last 7 days"
+list all files modified in the last 7 days
 ```
 
 **Expected interaction**:
@@ -41,7 +41,7 @@ gh copilot suggest "list all files modified in the last 7 days"
 ### Demo 1.2 — More complex suggestion
 
 ```bash
-gh copilot suggest "find all JavaScript files larger than 100KB and show their sizes in human-readable format"
+find all JavaScript files larger than 100KB and show their sizes in human-readable format
 ```
 
 **Expected interaction**:
@@ -51,7 +51,7 @@ gh copilot suggest "find all JavaScript files larger than 100KB and show their s
 ### Demo 1.3 — DevOps-style suggestion
 
 ```bash
-gh copilot suggest "show me Docker containers using the most memory, sorted from highest to lowest"
+show me Docker containers using the most memory, sorted from highest to lowest
 ```
 
 **Audience engagement**: Ask "What command would you normally use for this? How long would that take to look up?"
