@@ -23,7 +23,7 @@ cd copilot-cli-demo
 
 ---
 
-## 📌 Section 1 — Getting Started Suggestions
+## 📌 Section 1 — Getting Started with basic commands
 
 **Talking point**: "Instead of Googling shell commands or checking man pages, you can describe what you want in plain English."
 
@@ -58,14 +58,14 @@ show me Docker containers using the most memory, sorted from highest to lowest
 
 ---
 
-## 📌 Section 2 — Demystifying Commands with `gh copilot explain`
+## 📌 Section 2 — Demystifying Commands
 
 **Talking point**: "Ever seen a command that looks like black magic? Copilot can decode it instantly — great for code reviews and onboarding."
 
 ### Demo 2.1 — Explain a cryptic one-liner
 
 ```bash
-gh copilot explain "find . -type f -name '*.log' -mtime +30 -exec rm -f {} \;"
+explain "find . -type f -name '*.log' -mtime +30 -exec rm -f {} \;"
 ```
 
 **Copilot will explain**:
@@ -78,13 +78,13 @@ gh copilot explain "find . -type f -name '*.log' -mtime +30 -exec rm -f {} \;"
 ### Demo 2.2 — Explain a complex git command
 
 ```bash
-gh copilot explain "git log --oneline --graph --decorate --all"
+explain "git log --oneline --graph --decorate --all"
 ```
 
 ### Demo 2.3 — Explain the deploy script in this repo
 
 ```bash
-gh copilot explain "$(cat demo/deploy.sh)"
+explain "$(cat demo/deploy.sh)"
 ```
 
 **Talking point**: "You can pipe file contents directly — Copilot reads and explains the whole script."
@@ -94,14 +94,6 @@ gh copilot explain "$(cat demo/deploy.sh)"
 ## 📌 Section 3 — Interactive Mode: Your AI Terminal Assistant
 
 **Talking point**: "Now let's go deeper. The interactive mode is where Copilot CLI really shines — it has memory of your conversation and can make changes to your code."
-
-### Launch interactive mode
-
-```bash
-copilot
-```
-
-> You'll see the Copilot banner and a prompt. Everything from here is typed inside the interactive interface.
 
 ### Demo 3.1 — Ask a contextual question
 
