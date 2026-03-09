@@ -1,8 +1,8 @@
-# 🎬 GitHub Copilot CLI — Demo Script
+# 🎬 GitHub Copilot CLI — Hands-On Guide
 
-> **Presenter Guide**: This script walks you through a live, engaging demo of the latest GitHub Copilot CLI features. Each section is self-contained — feel free to mix and match sections based on your audience and time.
+> This guide walks you through the latest GitHub Copilot CLI features with practical, copy-paste examples. Each section is self-contained — feel free to jump to whichever topic interests you.
 >
-> ⏱ **Full demo**: ~30 minutes | **Quick demo**: Sections 1–4 (~15 minutes)
+> ⏱ **Estimated time**: ~30 minutes end-to-end | **Quick path**: Sections 1–4 (~15 minutes)
 
 ---
 
@@ -29,81 +29,76 @@ git clone https://github.com/HarvirChima/copilot-cli-demo.git
 cd copilot-cli-demo
 ```
 
-> 💡 **Tip for presenters**: Run through the demo once before presenting. Have this file open in one terminal pane and the Copilot CLI in another.
+> 💡 **Tip**: It helps to have this guide open in one terminal pane and the Copilot CLI in another.
 
 ---
 
 ## 📌 Section 1 — Getting Started with `gh copilot suggest`
 
-**Talking point**: "Instead of Googling shell commands or checking man pages, you can describe what you want in plain English."
+Instead of searching the web for shell commands or digging through man pages, you can describe what you want in plain English and let Copilot generate the command for you.
 
-### Demo 1.1 — Basic command suggestion
+### Try it: Basic command suggestion
 
 ```bash
 gh copilot suggest "list all files modified in the last 7 days"
 ```
 
-**Expected interaction**:
-- Copilot suggests: `find . -type f -mtime -7`
-- You'll see options: **Execute**, **Revise**, **Copy to clipboard**, **Rate response**
-- Press `E` to execute or `R` to revise with follow-up
+**What you'll see**: Copilot suggests a command like `find . -type f -mtime -7` and gives you options to **Execute**, **Revise**, **Copy to clipboard**, or **Rate the response**. Press `E` to run it directly, or `R` to refine your request.
 
-### Demo 1.2 — More complex suggestion
+### Try it: A more complex suggestion
 
 ```bash
 gh copilot suggest "find all JavaScript files larger than 100KB and show their sizes in human-readable format"
 ```
 
-**Expected interaction**:
-- Copilot suggests something like: `find . -name "*.js" -size +100k -exec ls -lh {} \;`
-- Walk through the response options with the audience
+Copilot will suggest something like `find . -name "*.js" -size +100k -exec ls -lh {} \;`. Try the different response options to see how they work.
 
-### Demo 1.3 — DevOps-style suggestion
+### Try it: DevOps-style suggestion
 
 ```bash
 gh copilot suggest "show me Docker containers using the most memory, sorted from highest to lowest"
 ```
 
-**Audience engagement**: Ask "What command would you normally use for this? How long would that take to look up?"
+Think about how long it would normally take to look up a command like this — Copilot gets you there in seconds.
 
 ---
 
 ## 📌 Section 2 — Demystifying Commands with `gh copilot explain`
 
-**Talking point**: "Ever seen a command that looks like black magic? Copilot can decode it instantly — great for code reviews and onboarding."
+Ever encounter a command that looks like it was written in another language? Copilot can break down any command into plain English — great for learning, code reviews, and onboarding.
 
-### Demo 2.1 — Explain a cryptic one-liner
+### Try it: Explain a cryptic one-liner
 
 ```bash
 gh copilot explain "find . -type f -name '*.log' -mtime +30 -exec rm -f {} \;"
 ```
 
-**Copilot will explain**:
+Copilot will walk you through each piece of the command:
 - `find .` — start from the current directory
 - `-type f` — files only
 - `-name '*.log'` — matching log files
 - `-mtime +30` — not modified in 30+ days
 - `-exec rm -f {}` — delete each one
 
-### Demo 2.2 — Explain a complex git command
+### Try it: Explain a complex git command
 
 ```bash
 gh copilot explain "git log --oneline --graph --decorate --all"
 ```
 
-### Demo 2.3 — Explain the deploy script in this repo
+### Try it: Explain a script from this repo
 
 ```bash
 gh copilot explain "$(cat demo/deploy.sh)"
 ```
 
-**Talking point**: "You can pipe file contents directly — Copilot reads and explains the whole script."
+You can pipe file contents directly into `explain` — Copilot reads and explains the whole script.
 
 ---
 
 ## 📌 Section 3 — Interactive Mode: Your AI Terminal Assistant
 
-**Talking point**: "Now let's go deeper. The interactive mode is where Copilot CLI really shines — it has memory of your conversation and can make changes to your code."
+Interactive mode is where Copilot CLI really shines — it maintains conversation context and can make changes to your code directly.
 
 ### Launch interactive mode
 
@@ -111,15 +106,15 @@ gh copilot explain "$(cat demo/deploy.sh)"
 copilot
 ```
 
-> You'll see the Copilot banner and a prompt. Everything from here is typed inside the interactive interface.
+> You'll see the Copilot banner and a prompt. Everything below is typed inside the interactive interface.
 
-### Demo 3.1 — Ask a contextual question
+### Try it: Ask a contextual question
 
 ```
 What does this repository do? Give me a quick summary.
 ```
 
-### Demo 3.2 — Include a file in context
+### Try it: Include a file in context
 
 ```
 @demo/calculator.py
@@ -127,9 +122,9 @@ What does this repository do? Give me a quick summary.
 Explain what this module does and identify any edge cases that aren't handled.
 ```
 
-> **Tip**: Use `@FILENAME` to include any file's content directly in the conversation context.
+> 💡 Use `@FILENAME` to include any file's content directly in the conversation context.
 
-### Demo 3.3 — Fix a bug with `/fix`
+### Try it: Fix a bug with `/fix`
 
 ```
 @demo/buggy_app.js
@@ -137,13 +132,9 @@ Explain what this module does and identify any edge cases that aren't handled.
 There are several bugs in this file. Use /fix to identify and correct them all.
 ```
 
-**Watch Copilot**:
-- Analyze the code
-- List each bug with an explanation
-- Propose fixes
-- Ask for your confirmation before applying changes
+Copilot will analyze the code, list each bug with an explanation, propose fixes, and ask for your confirmation before applying changes.
 
-### Demo 3.4 — Generate tests
+### Try it: Generate tests
 
 ```
 @demo/calculator.py
@@ -153,20 +144,19 @@ Generate comprehensive unit tests for all the functions in this file. Include ed
 
 > Copilot will create a new test file (`test_calculator.py`) with well-structured pytest tests.
 
-### Demo 3.5 — Switch AI models
+### Try it: Switch AI models
 
 ```
 /model
 ```
 
-- Browse available models: GPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro, etc.
-- Select a different model and ask the same question to compare outputs
+Browse available models (GPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro, etc.), select a different one, and ask the same question to compare outputs.
 
 ---
 
 ## 📌 Section 4 — Plan Mode and the `/plan` Command
 
-**Talking point**: "Before writing a single line of code, you can have Copilot draft a full implementation plan. This is great for complex features."
+Before writing a single line of code, you can have Copilot draft a full implementation plan. This is ideal for complex features where you want to think before you build.
 
 ### Enable plan mode (Shift+Tab inside interactive mode)
 
@@ -182,20 +172,20 @@ Or use the slash command directly:
       and update the module docstring to reflect the changes.
 ```
 
-**Copilot will**:
+Copilot will:
 1. Analyze the existing code
 2. Draft a numbered implementation plan
 3. Ask you to approve before proceeding
 
-**Talking point**: "This is like pairing with a senior developer who shows you the full plan before touching anything."
+This is like pairing with a senior developer who shows you the full plan before touching anything.
 
 ---
 
 ## 📌 Section 5 — ⚡ The `/fleet` Command: Parallel AI Execution
 
-**Talking point**: "This is the newest and most exciting feature. `/fleet` turns Copilot into an orchestrator — breaking your task into parallel subtasks handled by multiple AI subagents simultaneously."
+The `/fleet` command is one of the newest and most powerful features. It turns Copilot into an orchestrator — breaking your task into parallel subtasks handled by multiple AI subagents simultaneously.
 
-### Demo 5.1 — Your first fleet task
+### Try it: Your first fleet task
 
 ```
 /fleet
@@ -204,13 +194,13 @@ generate unit tests for demo/calculator.py covering all edge cases,
 and create a CHANGELOG.md file summarizing all changes made in this session.
 ```
 
-**Watch Copilot**:
+Copilot will:
 - Analyze the prompt and identify 3 independent subtasks
 - Spin up 3 subagents that work **in parallel**
 - Show you progress as each subagent completes its work
 - Present the combined results
 
-### Demo 5.2 — Fleet with model specialization
+### Try it: Fleet with model specialization
 
 ```
 /fleet
@@ -218,11 +208,11 @@ Use GPT-4o to write a technical architecture document for this project in ARCHIT
 and use Claude to rewrite demo/deploy.sh with enhanced error handling and logging.
 ```
 
-**Talking point**: "You can even direct fleet to use specific models for specific subtasks — use the model best suited for each type of work."
+You can direct fleet to use specific models for specific subtasks — using the model best suited for each type of work.
 
-### Demo 5.3 — Fleet with autopilot (the power combo)
+### Try it: Fleet with autopilot (the power combo)
 
-> First, draft a plan:
+> First, switch to plan mode:
 
 ```
 Shift+Tab  (switch to plan mode)
@@ -236,18 +226,18 @@ and update demo/AGENTS.md with the new coding conventions used.
 
 > Once the plan is ready, select: **"Accept plan and build on autopilot + /fleet"**
 
-**Talking point**: "This is the ultimate workflow: plan → approve → let Copilot do the work in parallel, autonomously."
+This is the ultimate workflow: plan → approve → let Copilot do the work in parallel, autonomously.
 
 ---
 
 ## 📌 Section 6 — Code Review with `/review`
 
-**Talking point**: "Copilot can review your own changes before you push — like a built-in code reviewer."
+Copilot can review your own changes before you push — like a built-in code reviewer that catches issues early.
 
 ### Make a change, then review it
 
 ```bash
-# First, make a small change to a demo file (e.g., add a comment to calculator.py)
+# First, make a small change to a file (e.g., add a comment to calculator.py)
 echo "# Added by demo" >> demo/calculator.py
 ```
 
@@ -264,7 +254,7 @@ style violations, or improvements.
 
 ## 📌 Section 7 — Delegating to Remote Repos with `/delegate`
 
-**Talking point**: "Copilot CLI can reach out beyond your local machine — delegating work to remote repos and creating pull requests on your behalf."
+Copilot CLI can reach beyond your local machine — delegating work to remote repositories and creating pull requests on your behalf.
 
 ```
 /delegate
@@ -273,7 +263,7 @@ workflow that automatically runs the Python tests on every pull request.
 Open a PR with the changes.
 ```
 
-**Copilot will**:
+Copilot will:
 1. Create the workflow YAML
 2. Open a pull request in the remote repository
 3. Give you the PR link
@@ -282,7 +272,7 @@ Open a PR with the changes.
 
 ## 📌 Section 8 — Productivity Tips & Customization
 
-**Talking point**: "A few power-user tricks to get the most out of Copilot CLI."
+A few power-user tricks to get the most out of Copilot CLI.
 
 ### Custom instructions with `AGENTS.md`
 

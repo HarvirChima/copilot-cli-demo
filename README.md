@@ -62,7 +62,7 @@ copilot
 
 | File | Purpose |
 |---|---|
-| [`DEMO_SCRIPT.md`](./DEMO_SCRIPT.md) | 📋 Full presenter walkthrough — follow this step by step |
+| [`DEMO_SCRIPT.md`](./DEMO_SCRIPT.md) | 📋 Hands-on guide — follow this step by step |
 | [`demo/buggy_app.js`](./demo/buggy_app.js) | 🐛 Intentionally buggy JavaScript app (great for `/fix`) |
 | [`demo/calculator.py`](./demo/calculator.py) | 🐍 Python module ready for test generation (`/test`) |
 | [`demo/deploy.sh`](./demo/deploy.sh) | 🚀 Complex deploy script for `gh copilot explain` |
