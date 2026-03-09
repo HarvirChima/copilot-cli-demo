@@ -11,20 +11,10 @@
 ### Setup Checklist
 
 ```bash
-# 1. Make sure GitHub CLI is installed
-gh --version
-
-# 2. Make sure you're authenticated
-gh auth status
-
-# 3. Install or update Copilot CLI
-gh extension install github/gh-copilot   # first-time install
-gh extension upgrade gh-copilot          # or update if already installed
-
-# 4. Verify Copilot CLI is ready
+# 1. Verify Copilot CLI is ready
 gh copilot --version
 
-# 5. Clone the demo repo and navigate into it
+# 2. Clone the demo repo and navigate into it
 git clone https://github.com/HarvirChima/copilot-cli-demo.git
 cd copilot-cli-demo
 ```
