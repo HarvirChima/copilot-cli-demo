@@ -70,6 +70,19 @@ copilot
 
 ---
 
+## 🔗 GitHub Activities from the CLI
+
+Copilot CLI connects directly to GitHub.com, letting you manage your work without leaving the terminal:
+
+- **Pull Requests** — List your open PRs, create new ones, review code changes, merge, or close
+- **Issues** — Browse assigned issues, create new issues, find good first issues
+- **Actions Workflows** — List, inspect, and create GitHub Actions workflows
+- **Remote Repos** — Make file changes and raise PRs across repositories
+
+> See the [GitHub Activities section of the demo script](./DEMO_SCRIPT.md#-section-8--github-activities-from-the-cli) for full examples and talking points.
+
+---
+
 ## 🌟 Highlight: The `/fleet` Command
 
 `/fleet` is Copilot CLI's most powerful new capability. It breaks a complex, multi-part task into **independent subtasks** and executes them **in parallel** using subagents, dramatically cutting completion time.
