@@ -262,7 +262,121 @@ Open a PR with the changes.
 
 ---
 
-## 📌 Section 8 — Productivity Tips & Customization
+## 📌 Section 8 — GitHub Activities from the CLI
+
+**Talking point**: "Copilot CLI isn't just about local work — it connects directly to GitHub.com. You can manage pull requests, triage issues, explore Actions workflows, and more, all without leaving your terminal."
+
+### Demo 8.1 — Fetch details about your work on GitHub
+
+```
+List my open PRs
+```
+
+**Copilot will**:
+- Query GitHub.com for your open pull requests across repositories
+- Display a summary with titles, repos, and status
+
+> **Tip**: For more specific results, include the repository name: `List all open issues assigned to me in OWNER/REPO`
+
+### Demo 8.2 — Start working on an issue
+
+```
+I've been assigned this issue: https://github.com/octo-org/octo-repo/issues/1234. Start working on this for me in a suitably named branch.
+```
+
+**Copilot will**:
+- Read the issue details from GitHub
+- Create a descriptively named branch
+- Begin implementing the fix or feature described in the issue
+
+### Demo 8.3 — Make changes and raise a pull request
+
+```
+In the root of this repo, add a Node script called user-info.js that outputs
+information about the user who ran the script. Create a pull request to add
+this file to the repo on GitHub.
+```
+
+**Copilot will**:
+- Write the code
+- Create a pull request on GitHub.com on your behalf — **you** are marked as the PR author
+
+Another example — editing a remote repo:
+
+```
+Create a PR that updates the README at https://github.com/octo-org/octo-repo,
+changing the subheading "How to run" to "Example usage"
+```
+
+### Demo 8.4 — Create an issue on GitHub
+
+```
+Raise an improvement issue in octo-org/octo-repo. In src/someapp/somefile.py
+the `file = open('data.txt', 'r')` block opens a file but never closes it.
+```
+
+**Copilot will**:
+- Open a new issue in the specified repository with a clear title and description
+
+### Demo 8.5 — Review code changes in a pull request
+
+```
+Check the changes made in PR https://github.com/octo-org/octo-repo/pull/57575.
+Report any serious errors you find in these changes.
+```
+
+**Copilot will**:
+- Fetch the PR diff from GitHub
+- Analyze the changes for bugs, security issues, and logic errors
+- Report a summary of problems directly in the CLI
+
+### Demo 8.6 — Manage pull requests
+
+```
+Merge all of the open PRs that I've created in octo-org/octo-repo
+```
+
+```
+Close PR #11 on octo-org/octo-repo
+```
+
+**Talking point**: "You can merge, close, or update PRs without switching to a browser — perfect for batch operations."
+
+### Demo 8.7 — Find specific issues or workflows
+
+```
+Use the GitHub MCP server to find good first issues for a new team member
+to work on from octo-org/octo-repo
+```
+
+> **Note**: If you know that a specific MCP server can achieve a particular task, specifying it in your prompt helps Copilot deliver the results you want.
+
+```
+List any Actions workflows in this repo that add comments to PRs
+```
+
+### Demo 8.8 — Create a GitHub Actions workflow
+
+```
+Branch off from main and create a GitHub Actions workflow that will run on
+pull requests, or can be run manually. The workflow should run eslint to
+check for problems in the changes made in the PR. If warnings or errors are
+found these should be shown as messages in the diff view of the PR. I want
+to prevent code with errors from being merged into main so, if any errors
+are found, the workflow should cause the PR check to fail. Push the new
+branch and create a pull request.
+```
+
+**Copilot will**:
+1. Create a new branch from `main`
+2. Generate a complete GitHub Actions workflow YAML
+3. Push the branch and open a pull request — all from the CLI
+
+**Talking point**: "From triaging issues to creating full CI/CD workflows, Copilot bridges your terminal and GitHub.com seamlessly."
+
+---
+
+## 📌 Section 9 — Productivity Tips & Customization
 
 **Talking point**: "A few power-user tricks to get the most out of Copilot CLI."
 
@@ -310,6 +424,7 @@ copilot --allow-tool 'shell(git:*)' --deny-tool 'shell(git push)'
 5. **`/fix` + `/test` + `/review`** — AI-powered code quality tools
 6. **`/fleet`** — Parallel execution for large, multi-step tasks ⚡
 7. **`/delegate`** — AI-generated PRs in remote repos
+8. **GitHub Activities** — Manage PRs, issues, and Actions workflows from the CLI
 
 ---
 
