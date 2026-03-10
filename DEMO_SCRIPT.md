@@ -11,12 +11,14 @@
 ### Setup Checklist
 
 ```bash
-# 1. Verify Copilot CLI is ready
-gh copilot --version
 
-# 2. Clone the demo repo and navigate into it
+# Clone the demo repo and navigate into it
 git clone https://github.com/HarvirChima/copilot-cli-demo.git
 cd copilot-cli-demo
+
+# Spin up the CLI and show the login flow
+copilot
+/login
 ```
 
 > 💡 **Tip for presenters**: Run through the demo once before presenting. Have this file open in one terminal pane and the Copilot CLI in another.
