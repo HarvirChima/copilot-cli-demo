@@ -112,7 +112,7 @@ List my open PRs
 ### Demo 3.2 — Start working on an issue
 
 ```
-I've been assigned this issue: https://github.com/octo-org/octo-repo/issues/1234. Start working on this for me in a suitably named branch.
+I've been assigned this issue: https://github.com/HarvirChima/copilot-cli-demo/issues/1234. Start working on this for me in a suitably named branch.
 ```
 
 **Copilot will**:
@@ -135,14 +135,14 @@ this file to the repo on GitHub.
 Another example — editing a remote repo:
 
 ```
-Create a PR that updates the README at https://github.com/octo-org/octo-repo,
+Create a PR that updates the README at https://github.com/HarvirChima/copilot-cli-demo,
 changing the subheading "How to run" to "Example usage"
 ```
 
 ### Demo 3.4 — Create an issue on GitHub
 
 ```
-Raise an improvement issue in octo-org/octo-repo. In src/someapp/somefile.py
+Raise an improvement issue in HarvirChima/copilot-cli-demo. In src/someapp/somefile.py
 the `file = open('data.txt', 'r')` block opens a file but never closes it.
 ```
 
@@ -152,7 +152,7 @@ the `file = open('data.txt', 'r')` block opens a file but never closes it.
 ### Demo 3.5 — Review code changes in a pull request
 
 ```
-Check the changes made in PR https://github.com/octo-org/octo-repo/pull/57575.
+Check the changes made in PR https://github.com/HarvirChima/copilot-cli-demo/pull/57575.
 Report any serious errors you find in these changes.
 ```
 
@@ -164,11 +164,11 @@ Report any serious errors you find in these changes.
 ### Demo 3.6 — Manage pull requests
 
 ```
-Merge all of the open PRs that I've created in octo-org/octo-repo
+Merge all of the open PRs that I've created in HarvirChima/copilot-cli-demo
 ```
 
 ```
-Close PR #11 on octo-org/octo-repo
+Close PR #11 on HarvirChima/copilot-cli-demo
 ```
 
 **Talking point**: "You can merge, close, or update PRs without switching to a browser — perfect for batch operations."
@@ -177,7 +177,7 @@ Close PR #11 on octo-org/octo-repo
 
 ```
 Use the GitHub MCP server to find good first issues for a new team member
-to work on from octo-org/octo-repo
+to work on from HarvirChima/copilot-cli-demo
 ```
 
 > **Note**: If you know that a specific MCP server can achieve a particular task, specifying it in your prompt helps Copilot deliver the results you want.
