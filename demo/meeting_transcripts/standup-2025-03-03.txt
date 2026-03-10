@@ -1,0 +1,28 @@
+Weekly Standup — March 3, 2025
+Attendees: Sarah Chen, Marcus Williams, Priya Patel, Jake Novak
+
+Sarah: Okay let's get started. Marcus, you want to go first?
+
+Marcus: Sure. So last week I finished the onboarding flow redesign, the mockups are in Figma. I shared the link in Slack. I got feedback from design review on Thursday and made a few tweaks. This week I'm going to start on the email notification templates. Oh and I'm still waiting on legal to approve the new privacy copy for the settings page, I pinged them again Friday but haven't heard back.
+
+Sarah: Can you escalate that to Dana? She has a direct line to the legal team.
+
+Marcus: Yeah good call I'll do that today.
+
+Sarah: Priya?
+
+Priya: Last week I spent most of my time on the Q1 metrics dashboard. The data pipeline is working but I ran into an issue with the date aggregation — it's grouping by UTC instead of the user's local timezone. I talked to the backend team and they said they can add a timezone field to the API response but it won't be until next sprint. So for now I'm going to add a note in the UI that says "all times shown in UTC." This week I'm also picking up the customer feedback survey integration that got pushed from last sprint.
+
+Sarah: Sounds good. Is there anything blocking you on the survey integration?
+
+Priya: I need access to the SurveyMonkey API credentials. I put in a request with IT last Wednesday but nothing yet.
+
+Sarah: I'll follow up with IT today. Jake?
+
+Jake: So I was mostly on support rotation last week. We had that P1 incident on Tuesday with the payment processing timeout. Root cause ended up being a misconfigured connection pool on the new database replica. I wrote up the postmortem and shared it in the incidents channel. We should probably discuss it in the retro on Friday. This week I'm back on feature work — I'm picking up the bulk export feature for the admin dashboard. I need to sync with Priya on the data format since it overlaps with the metrics stuff.
+
+Sarah: Great, make sure you two connect on that today. Anything else from anyone?
+
+Marcus: Oh one more thing — the design system package needs to be updated to version 4.2. It fixes that button alignment issue we've been seeing. Should be a quick PR.
+
+Sarah: Okay, add it to the sprint board. Alright, good standup everyone. Let's sync again Wednesday if anything comes up.

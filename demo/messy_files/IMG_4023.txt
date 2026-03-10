@@ -1,0 +1,17 @@
+Quarterly Budget Summary — Q1 2025
+Prepared by: Finance Team
+
+Department        | Budget    | Spent     | Remaining
+Engineering       | $450,000  | $412,500  | $37,500
+Product           | $180,000  | $165,200  | $14,800
+Design            | $120,000  | $98,750   | $21,250
+Marketing         | $275,000  | $301,400  | -$26,400 (over budget)
+Sales             | $340,000  | $298,000  | $42,000
+Operations        | $200,000  | $187,300  | $12,700
+
+Total             | $1,565,000| $1,463,150| $101,850
+
+Notes:
+- Marketing overspend due to unplanned conference sponsorship ($35K)
+- Engineering savings from delayed Q2 hiring (2 positions pushed to Q2)
+- Design underspend — contractor budget not fully utilized

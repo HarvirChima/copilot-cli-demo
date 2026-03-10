@@ -1,0 +1,42 @@
+Product Review Meeting — March 5, 2025
+Attendees: Lisa Tran (PM), Alex Rivera (Eng Lead), Sarah Chen (Eng), Kim Ogawa (Design), Tom Bradley (Data)
+
+Lisa: Thanks everyone for joining. The goal today is to review our Q1 progress and align on priorities for the rest of the quarter. Let's start with the roadmap status.
+
+Alex: From eng side we're about 70% through the Q1 commitments. The new user onboarding flow is in code review, the dashboard redesign shipped last week, and the API v2 migration is on track for end of month. The one risk is the bulk export feature — we just started it this sprint and it's bigger than we estimated. It touches the data layer, the admin UI, and we need to add rate limiting. Realistically it might slip into early Q2.
+
+Lisa: How much would it slip?
+
+Alex: Maybe two weeks into Q2. The data layer changes are the bottleneck.
+
+Tom: Yeah I can confirm that. The export queries need to handle datasets up to 500K rows and our current pagination approach won't scale. I'm prototyping a cursor-based approach this week.
+
+Lisa: Okay. I'd rather ship it right than rush it. Let's officially move the deadline to April 15 and communicate that to stakeholders. Kim, where are we on the design side?
+
+Kim: The onboarding redesign is done and handed off. I'm now focused on the settings page overhaul. I've done user research — we interviewed 8 customers last week. The main pain points are: the settings are too deeply nested, users can't find notification preferences, and there's no search functionality in settings. I'll have wireframes ready by Friday.
+
+Lisa: That's great insight. Can you share the interview summaries in Confluence?
+
+Kim: Already done. I posted them yesterday with key quotes highlighted.
+
+Lisa: Perfect. Tom, anything else on the data side?
+
+Tom: Two things. First, the Q1 metrics dashboard is live but we've identified a timezone issue that Priya's working around. Long-term fix is in the API backlog. Second, I've been analyzing our feature adoption data and there's an interesting trend — the new quick-actions menu has 3x the engagement we expected. 47% of daily active users are using it. I think we should invest more there in Q2.
+
+Lisa: That's a really strong signal. Can you put together a one-pager on quick-actions expansion opportunities? I want to bring it to the Q2 planning meeting.
+
+Tom: Will do. I'll have it by next Wednesday.
+
+Lisa: Last thing — we need to decide on the Q1 customer webinar topic. Options are: (1) the new dashboard features, (2) API v2 migration guide, or (3) a general "what's new in Q1" overview. Thoughts?
+
+Alex: I'd say option 3. We've shipped enough that a "what's new" would be compelling, and it lets us highlight multiple features instead of just one.
+
+Kim: Agreed. Plus we can show the onboarding improvements which customers have been asking about.
+
+Lisa: Okay, let's go with "What's New in Q1." Kim, can you help with the presentation visuals? And Alex, we'll need a demo of the dashboard. Let's aim for the webinar the week of March 24.
+
+Alex: Works for me.
+
+Kim: Same.
+
+Lisa: Great. I'll send out action items after this. Thanks everyone.

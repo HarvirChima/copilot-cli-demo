@@ -2,7 +2,7 @@
 
 > **Presenter Guide**: This script walks you through a live, engaging demo of the latest GitHub Copilot CLI features. Each section is self-contained — feel free to mix and match sections based on your audience and time.
 >
-> ⏱ **Full demo**: ~30 minutes | **Quick demo**: Sections 1–4 (~15 minutes)
+> ⏱ **Full demo**: ~40 minutes | **Quick demo**: Sections 1–4 (~15 minutes) | **Non-engineering showcase**: Section 10 (~10 minutes)
 
 ---
 
@@ -417,6 +417,83 @@ copilot --allow-tool 'shell(git:*)' --deny-tool 'shell(git push)'
 
 ---
 
+## 📌 Section 10 — Non-Engineering Use Cases
+
+**Talking point**: "Copilot CLI isn't just for developers. It's an AI assistant that can handle everyday workplace tasks — analyzing meetings, cleaning up documents, organizing files. Let's look at a few examples."
+
+### Demo 10.1 — Analyze meeting transcripts
+
+```
+@demo/meeting_transcripts/standup-2025-03-03.txt
+@demo/meeting_transcripts/product-review-2025-03-05.txt
+@demo/meeting_transcripts/retro-2025-03-07.txt
+@demo/meeting_transcripts/client-call-2025-03-06.txt
+
+Analyze these meeting transcripts from this week. For each meeting, extract:
+- Key decisions made
+- Action items (with owners and deadlines)
+- Open blockers or risks
+
+Then give me a consolidated summary of all action items across every meeting, sorted by owner.
+```
+
+**Watch Copilot**:
+- Read through all four transcripts
+- Extract structured information from unstructured conversations
+- Cross-reference recurring themes (e.g., the bulk export feature appears in multiple meetings)
+- Produce a single organized summary
+
+**Talking point**: "Imagine doing this every Friday with your week's meetings — a five-minute prompt replaces an hour of manual note-taking."
+
+### Demo 10.2 — Clean up achievements for a performance review
+
+```
+@demo/achievements.txt
+
+These are my raw quarterly achievements. Clean them up for a formal performance review by:
+1. Rewriting each item with stronger action verbs and quantified impact
+2. Grouping them into categories (e.g., Leadership, Delivery, Customer Impact, Process Improvement)
+3. Highlighting the top 5 most impactful achievements
+4. Suggesting any gaps I should address (e.g., missing themes like technical growth or mentorship outcomes)
+```
+
+**Watch Copilot**:
+- Transform casual notes into professional, review-ready bullet points
+- Add structure and categorization
+- Identify the strongest achievements and surface gaps
+
+**Talking point**: "Performance review season is painful for everyone. Copilot can turn a brain dump into polished, well-organized talking points in seconds."
+
+### Demo 10.3 — Organize a messy folder of files
+
+```
+Look at the files in demo/messy_files/ and:
+1. Read each file to understand its content
+2. Suggest a clear, descriptive filename for each one based on what it actually contains
+3. Create a shell script that renames all the files to their new names
+```
+
+**Watch Copilot**:
+- Inspect each file's contents
+- Generate meaningful names like `q1-budget-summary.txt`, `product-launch-checklist.txt`, etc.
+- Produce a ready-to-run rename script
+
+**Talking point**: "We all have that one folder — or shared drive — full of 'Untitled document' and 'Copy of Copy of deck'. Copilot can make sense of it for you."
+
+### Demo 10.4 — Fleet: parallel non-engineering tasks
+
+```
+/fleet
+Analyze the meeting transcripts in demo/meeting_transcripts/ and create a one-page
+executive summary of the week's key decisions and risks,
+clean up the achievements in demo/achievements.txt into a polished performance review format,
+and rename the files in demo/messy_files/ with descriptive names based on their content.
+```
+
+**Talking point**: "And of course, with `/fleet` you can do all three of these in parallel — just like a team of assistants working at the same time."
+
+---
+
 ## 🎉 Wrap-Up & Key Takeaways
 
 1. **`gh copilot suggest`** — Turn plain English into shell commands
@@ -427,6 +504,7 @@ copilot --allow-tool 'shell(git:*)' --deny-tool 'shell(git push)'
 6. **`/fleet`** — Parallel execution for large, multi-step tasks ⚡
 7. **`/delegate`** — AI-generated PRs in remote repos
 8. **GitHub Activities** — Manage PRs, issues, and Actions workflows from the CLI
+9. **Non-engineering tasks** — Meeting analysis, document cleanup, file organization, and more
 
 ---
 

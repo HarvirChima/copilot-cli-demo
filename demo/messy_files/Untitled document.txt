@@ -1,0 +1,34 @@
+Interview Questions — Senior Product Manager Role
+
+SCREENING (30 min, recruiter):
+1. Walk me through your background and what attracted you to this role.
+2. What's your experience with B2B SaaS products?
+3. Tell me about a product you launched from concept to delivery.
+4. What's your salary expectation?
+5. When would you be available to start?
+
+HIRING MANAGER (45 min):
+1. Describe a time you had to make a tough prioritization decision. What framework did you use?
+2. How do you gather and synthesize customer feedback into product requirements?
+3. Tell me about a feature that failed. What did you learn?
+4. How do you work with engineering teams to balance tech debt vs. new features?
+5. Walk me through how you'd approach building a roadmap for a new product area.
+
+CROSS-FUNCTIONAL (45 min, design + eng):
+1. How do you collaborate with designers during the discovery phase?
+2. Describe your ideal relationship with engineering leads.
+3. Tell me about a time you had a disagreement with a stakeholder. How did you resolve it?
+4. How do you define success metrics for a feature launch?
+
+EXECUTIVE (30 min, VP Product):
+1. Where do you see B2B product management heading in the next 3 years?
+2. How do you think about competitive positioning?
+3. Tell me about the biggest impact you've had on a business metric.
+4. What questions do you have about our product strategy?
+
+EVALUATION CRITERIA:
+- Strategic thinking (can they see the big picture?)
+- Customer empathy (do they talk about user needs?)
+- Execution skills (can they ship?)
+- Collaboration (how do they work with others?)
+- Communication (clear, structured, concise?)

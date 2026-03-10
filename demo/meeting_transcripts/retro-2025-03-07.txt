@@ -1,0 +1,35 @@
+Sprint Retrospective — March 7, 2025
+Facilitator: Sarah Chen
+Attendees: Marcus Williams, Priya Patel, Jake Novak, Alex Rivera
+
+Sarah: Alright everyone, let's do our retro for Sprint 23. Same format as usual — what went well, what didn't go well, and action items. I'll give everyone 5 minutes to write their notes then we'll discuss. 
+
+[5 minutes of silent writing]
+
+Sarah: Okay, let's start with what went well.
+
+Marcus: The dashboard redesign shipped on time and we got positive feedback from three enterprise customers within the first day. Also the design review process we started last sprint is working really well — catching issues earlier.
+
+Priya: Agreed on the design reviews. Also, the pair programming sessions Jake and I did on the data pipeline were really productive. We caught a race condition that would have been a nasty production bug.
+
+Jake: Yeah that was good. I'd also add that the postmortem process for the P1 incident went smoothly. We had the writeup done within 24 hours and the fix deployed same day. The runbook we wrote last quarter saved us a lot of time.
+
+Alex: From a lead perspective, I think our sprint planning has improved a lot. The story pointing was much more accurate this sprint — we completed 34 out of 38 points which is our best ratio this quarter.
+
+Sarah: Great. Now what didn't go well?
+
+Jake: The P1 incident itself. The connection pool misconfiguration was caused by a config change that didn't go through the normal review process. We need to enforce config reviews the same way we enforce code reviews.
+
+Marcus: I got blocked for two days waiting on legal approval for copy changes. We need a better process for cross-team dependencies. Can't have engineers sitting idle because another team's queue is full.
+
+Priya: Two things from me. First, I couldn't get the SurveyMonkey API credentials for four days. IT access requests are taking way too long. Second, the timezone issue in the metrics dashboard — we should have caught that in QA. Our test data was all in UTC so the bug was invisible in staging.
+
+Alex: I want to flag that the bulk export feature was underestimated by about 40%. We broke it down into subtasks during planning but missed the complexity of the data layer changes. We need to involve Tom in estimation for data-heavy features.
+
+Sarah: These are all valid. Let's turn them into action items.
+
+Sarah: Action items. One — Jake, draft a proposal for config change reviews to mirror our code review process. Target: share it by next Wednesday. Two — Marcus, work with Dana to set up a dedicated Slack channel for legal-eng requests with a 48-hour SLA. Three — Priya, add timezone-varied test data to the QA environment. Also I'll escalate the IT access request SLA issue to our director. Four — Alex, create a new estimation template that includes a "data complexity" category and loop in data team members for those stories.
+
+Alex: I'd add one more — let's schedule a 30-minute knowledge sharing session about the P1 incident. Other teams could learn from our runbook approach.
+
+Sarah: Good idea. Five — Alex to schedule the knowledge sharing session for next week. Okay, anything else? No? Great retro everyone. Let's have a good Sprint 24.

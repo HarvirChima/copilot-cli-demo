@@ -1,0 +1,24 @@
+# Raw Quarterly Achievements — Q1 2025
+# Employee: Jamie Rodriguez, Senior Product Manager
+# Note: Quick brain dump, needs cleanup before submitting to manager
+
+- helped launch the new dashboard thing in february, customers liked it
+- did 8 customer interviews for the settings redesign project
+- led the Q1 planning process for our team (5 people), we defined OKRs and everything
+- fixed a problem with our sprint process where stories kept getting underestimated, introduced a new estimation template
+- partnered with eng to ship SSO integration ahead of schedule (was supposed to be end of march, shipped mid feb)
+- presented at the all-hands about our product strategy, got good feedback
+- onboarded 2 new team members (Maria and Kevin), created their 30/60/90 plans
+- reduced customer support tickets related to onboarding by 35% after we redesigned the onboarding flow
+- managed the Q1 customer webinar series, 3 sessions with average 150 attendees each
+- started a cross-functional working group with design, eng, and data to improve our feature adoption metrics
+- wrote product requirements docs for 4 major features (bulk export, settings overhaul, notification digest, dashboard customization)
+- dealt with the P1 incident on feb 25, coordinated the customer communication and wrote the external postmortem
+- my team's NPS went from 42 to 51 this quarter
+- mentored 2 junior PMs in the associate PM program, met with them biweekly
+- drove adoption of the new quick-actions feature to 47% of DAU (target was 20%)
+- negotiated with the platform team to get API v2 migration prioritized, which unblocked 3 of our features
+- ran 6 sprint retrospectives and implemented process improvements based on team feedback
+- set up a dedicated slack channel for legal-eng requests which reduced avg turnaround from 5 days to 2 days
+- contributed to the company-wide product strategy document for the board meeting
+- traveled to the NYC office for a week to do in-person customer workshops (3 workshops, 12 customers total)

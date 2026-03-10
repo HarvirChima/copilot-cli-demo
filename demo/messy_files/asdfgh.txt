@@ -1,0 +1,40 @@
+Vendor Evaluation — Project Management Tools
+
+Evaluated by: Operations Team, March 2025
+Purpose: Replace current tool (Basecamp) with something that better supports cross-team workflows
+
+OPTION A: Asana Business
+- Cost: $24.99/user/month (est. $7,500/month for 300 users)
+- Pros: Great timeline views, strong integrations, good mobile app
+- Cons: Reporting is limited without premium tier, learning curve for non-technical teams
+- Trial feedback: 7.5/10 average from pilot group
+
+OPTION B: Monday.com Enterprise
+- Cost: $19/user/month base + $5/user for enterprise features (est. $7,200/month)
+- Pros: Very visual, easy to customize, good automations
+- Cons: Can feel overwhelming with too many boards, search is weak
+- Trial feedback: 8.1/10 average from pilot group
+
+OPTION C: Linear
+- Cost: $8/user/month (est. $2,400/month)
+- Pros: Fast, clean UI, great for engineering workflows, excellent keyboard shortcuts
+- Cons: Less suited for non-engineering teams, limited project views, no built-in time tracking
+- Trial feedback: 8.8/10 from eng, 5.2/10 from ops and marketing
+
+OPTION D: Notion + Notion Projects
+- Cost: $10/user/month (est. $3,000/month)
+- Pros: Flexible, combines docs + projects + wiki, good templates
+- Cons: Performance with large databases, not purpose-built for project management
+- Trial feedback: 7.9/10 average
+
+RECOMMENDATION: Monday.com Enterprise
+- Best balance of usability across all teams
+- Strongest automation features (reduces manual status updates)
+- Competitive pricing
+- Migration plan: 4-week rollout with team-by-team onboarding
+
+NEXT STEPS:
+1. Get finance approval for annual contract ($86,400/year)
+2. Negotiate enterprise discount (target 15% off)
+3. Assign migration lead (proposed: Dana P.)
+4. Schedule team training sessions (Week 1: Eng, Week 2: Product, Week 3: Marketing/Sales, Week 4: Ops)

@@ -1,0 +1,44 @@
+Client Check-In Call — March 6, 2025
+Attendees: Lisa Tran (PM), Sarah Chen (Eng), Jordan Hayes (Acme Corp — Account Manager), Rachel Kim (Acme Corp — VP of Operations)
+
+Lisa: Hi Jordan, hi Rachel. Thanks for making time today. We wanted to check in on how things are going with the platform and discuss your upcoming needs.
+
+Rachel: Thanks Lisa. Overall things have been going well since the last release. Our team adoption is up significantly — we went from about 60 users to over 200 in the last two months after you rolled out the SSO integration. That was a game changer for us.
+
+Jordan: Yeah, the IT team was really happy they didn't have to manage separate credentials anymore. But we do have a few items on our wish list if you want to hear them.
+
+Lisa: Absolutely, that's what we're here for.
+
+Jordan: Okay so the biggest one is reporting. Right now we export data to CSV and then build our own reports in Excel. It's really manual and takes our ops team about 6 hours a week. If you had built-in reporting or even just a way to schedule automated exports, that would save us a ton of time.
+
+Lisa: That's great feedback. We actually have a bulk export feature in development right now. Sarah, can you give a quick overview?
+
+Sarah: Sure. We're building a bulk export feature for the admin dashboard that will let you export large datasets — up to 500K rows — with filtering and scheduling. So you'll be able to set up a weekly export that runs automatically and sends the file to an email or S3 bucket. We're targeting mid-April for the release.
+
+Rachel: That sounds exactly like what we need. Will it support custom date ranges and filtering by department?
+
+Sarah: Yes, both of those are in scope. You'll be able to filter by any field in the dataset including department, date range, status, and user.
+
+Rachel: Excellent. The other thing I wanted to bring up is the notification system. We're getting a lot of notifications and our team finds it overwhelming. Is there a way to set up digest notifications — like getting one daily summary instead of individual alerts throughout the day?
+
+Lisa: That's something we've heard from other customers too. We don't have it built yet but it's on our Q2 roadmap. Kim on our design team is actually working on a settings overhaul that includes notification preferences. I'll make sure digest mode is included in the scope.
+
+Rachel: That would be wonderful. Last thing — and this is more of a minor ask — could you add the ability to customize the dashboard widgets? Right now everyone sees the same layout and different roles need different information front and center.
+
+Lisa: Noted. We'll add that to our backlog and prioritize it. Is there a specific layout your team would find most useful? We could use it as a starting point.
+
+Rachel: I'll have Jordan send over a mockup of what our ops team would ideally see. It's mostly around order volume, SLA compliance, and team workload metrics.
+
+Jordan: I'll get that to you by Monday.
+
+Lisa: Perfect. Any other concerns or issues?
+
+Jordan: One small thing — we noticed some slowness in the search function when we have more than 10,000 records loaded. It's not a blocker but it's noticeable.
+
+Sarah: Good to know. I'll flag that for our performance team. Can you send us the rough record count and any specific queries that feel slow? That'll help us reproduce it.
+
+Jordan: Will do.
+
+Lisa: Great. Thanks so much Rachel and Jordan. We really value this feedback. I'll send a summary email after this with all the action items and timelines.
+
+Rachel: Thanks Lisa, thanks Sarah. Looking forward to the export feature!

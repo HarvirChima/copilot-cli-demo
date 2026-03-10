@@ -18,13 +18,26 @@ features like `/fix`, `/test`, `/explain`, `/fleet`, and `/plan`.
 
 ```
 copilot-cli-demo/
-├── README.md           # Project overview and quick-start guide
-├── DEMO_SCRIPT.md      # Presenter walkthrough script
+├── README.md              # Project overview and quick-start guide
+├── DEMO_SCRIPT.md         # Presenter walkthrough script
 └── demo/
-    ├── AGENTS.md       # This file — Copilot custom instructions
-    ├── buggy_app.js    # Intentionally buggy JavaScript (for /fix demos)
-    ├── calculator.py   # Python module (for /test and /explain demos)
-    └── deploy.sh       # Bash deployment script (for explain demos)
+    ├── AGENTS.md          # This file — Copilot custom instructions
+    ├── buggy_app.js       # Intentionally buggy JavaScript (for /fix demos)
+    ├── calculator.py      # Python module (for /test and /explain demos)
+    ├── deploy.sh          # Bash deployment script (for explain demos)
+    ├── achievements.txt   # Raw quarterly achievements (for review cleanup demos)
+    ├── meeting_transcripts/   # Weekly meeting transcripts (for analysis demos)
+    │   ├── standup-2025-03-03.txt
+    │   ├── product-review-2025-03-05.txt
+    │   ├── client-call-2025-03-06.txt
+    │   └── retro-2025-03-07.txt
+    └── messy_files/       # Poorly-named files (for file organization demos)
+        ├── IMG_4023.txt
+        ├── notes final FINAL v2 (1).txt
+        ├── doc (3).txt
+        ├── Untitled document.txt
+        ├── Copy of Copy of deck.txt
+        └── asdfgh.txt
 ```
 
 ---
@@ -66,3 +79,8 @@ copilot-cli-demo/
 - When fixing bugs in `buggy_app.js`, explain each bug before applying the fix
 - When generating tests for `calculator.py`, produce a full `test_calculator.py` file
 - When explaining `deploy.sh`, break the explanation down section by section
+
+### Non-Engineering Demos
+- `meeting_transcripts/` contains 4 realistic meeting transcripts from a single week — standup, product review, client call, and retrospective. Cross-reference themes across meetings when analyzing.
+- `achievements.txt` is a raw brain dump of quarterly achievements. When cleaning up, use strong action verbs, quantify impact, and organize by category.
+- `messy_files/` contains 6 files with meaningless or unclear names. Each file has real content that should guide the suggested rename.
