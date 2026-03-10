@@ -82,7 +82,7 @@ Copilot CLI connects directly to GitHub.com, letting you manage your work withou
 - **Actions Workflows** — List, inspect, and create GitHub Actions workflows
 - **Remote Repos** — Make file changes and raise PRs across repositories
 
-> See the [GitHub Activities section of the demo script](./DEMO_SCRIPT.md#-section-8--github-activities-from-the-cli) for full examples and talking points.
+> See the [GitHub Activities section of the demo script](./DEMO_SCRIPT.md#-section-3--github-activities-from-the-cli) for full examples and talking points.
 
 ---
 
