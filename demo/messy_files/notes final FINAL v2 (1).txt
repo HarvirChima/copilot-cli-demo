@@ -1,0 +1,31 @@
+Product Launch Checklist — Mobile App v3.0
+
+PRE-LAUNCH (2 weeks before):
+[x] Feature freeze complete
+[x] QA sign-off on all P0/P1 bugs
+[x] App store screenshots updated
+[x] Release notes drafted
+[ ] Legal review of new terms of service
+[ ] Accessibility audit complete
+[ ] Load testing at 2x expected traffic
+
+LAUNCH DAY:
+[ ] Deploy backend changes (6am ET)
+[ ] Enable feature flags for new features
+[ ] Submit to App Store / Google Play
+[ ] Send launch email to beta users
+[ ] Post announcement on social media
+[ ] Monitor error rates for first 2 hours
+
+POST-LAUNCH (1 week after):
+[ ] Collect NPS from first 500 users
+[ ] Review crash reports
+[ ] Publish blog post with highlights
+[ ] Schedule retrospective
+[ ] Send thank-you notes to launch team
+
+CONTACTS:
+- App Store submission: Marcus W.
+- Backend deploy: Jake N.
+- Marketing comms: Lisa T.
+- Customer support lead: Dana P.

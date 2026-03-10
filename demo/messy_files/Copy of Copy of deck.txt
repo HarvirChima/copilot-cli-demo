@@ -1,0 +1,36 @@
+Q1 2025 Business Review — Talking Points
+
+SLIDE 1: Executive Summary
+- Revenue: $4.2M (up 18% YoY, 3% above target)
+- Active customers: 1,247 (up from 1,089 in Q4)
+- Net retention: 112%
+- NPS: 51 (up from 42 in Q4)
+
+SLIDE 2: Product Highlights
+- Shipped 3 major features: SSO integration, dashboard redesign, onboarding flow v2
+- Quick-actions adoption hit 47% of DAU (target was 20%)
+- Reduced onboarding support tickets by 35%
+- API v2 migration on track (70% complete)
+
+SLIDE 3: Customer Wins
+- Acme Corp expanded from 60 to 200 users after SSO launch
+- Signed 3 new enterprise deals: TechFlow ($85K ARR), Meridian ($62K ARR), Vertex ($48K ARR)
+- Renewed 97% of contracts up for renewal this quarter
+
+SLIDE 4: Challenges
+- Marketing overspent by $26K (unplanned conference sponsorship)
+- Bulk export feature slipping ~2 weeks into Q2
+- P1 incident on Feb 25 — payment processing outage (45 min downtime)
+- Hiring behind plan: 2 engineering roles still open
+
+SLIDE 5: Q2 Priorities
+1. Ship bulk export and notification digest features
+2. Settings page overhaul (based on customer research)
+3. Expand quick-actions based on adoption data
+4. Fill open engineering positions
+5. Customer webinar series continuation (monthly cadence)
+
+SLIDE 6: Asks
+- Approval for $35K additional marketing budget for Q2 events
+- Headcount approval: 1 additional senior engineer for data team
+- Decision needed on pricing tier changes (proposal shared separately)
