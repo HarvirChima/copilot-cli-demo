@@ -194,7 +194,7 @@ cat demo/AGENTS.md
 ### Session management
 
 ```
-/share gist     # Share this session as a GitHub gist
+/share     # Share this session as a GitHub gist
 /rename "bug-fix-session"   # Name the session for later reference
 /resume         # Pick up a previous session
 /context        # See how much of the context window you've used
