@@ -131,7 +131,7 @@ changing the subheading "How to run" to "Example usage"
 ### Demo 3.3 — Review code changes in a pull request
 
 ```
-Check the changes made in PR https://github.com/HarvirChima/copilot-cli-demo/pull/57575.
+Check the changes made in PR https://github.com/HarvirChima/copilot-cli-demo/pull/7.
 Report any serious errors you find in these changes.
 ```
 
@@ -147,7 +147,7 @@ Merge all of the open PRs that I've created in HarvirChima/copilot-cli-demo
 ```
 
 ```
-Close PR #11 on HarvirChima/copilot-cli-demo
+Close PR #7 on HarvirChima/copilot-cli-demo
 ```
 
 **Talking point**: "You can merge, close, or update PRs without switching to a browser — perfect for batch operations."
