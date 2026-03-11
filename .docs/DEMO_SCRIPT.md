@@ -109,18 +109,7 @@ List my open PRs
 
 > **Tip**: For more specific results, include the repository name: `List all open issues assigned to me in OWNER/REPO`
 
-### Demo 3.2 — Start working on an issue
-
-```
-I've been assigned this issue: https://github.com/HarvirChima/copilot-cli-demo/issues/1234. Start working on this for me in a suitably named branch.
-```
-
-**Copilot will**:
-- Read the issue details from GitHub
-- Create a descriptively named branch
-- Begin implementing the fix or feature described in the issue
-
-### Demo 3.3 — Make changes and raise a pull request
+### Demo 3.2 — Make changes and raise a pull request
 
 ```
 In the root of this repo, add a Node script called user-info.js that outputs
@@ -139,17 +128,7 @@ Create a PR that updates the README at https://github.com/HarvirChima/copilot-cl
 changing the subheading "How to run" to "Example usage"
 ```
 
-### Demo 3.4 — Create an issue on GitHub
-
-```
-Raise an improvement issue in HarvirChima/copilot-cli-demo. In src/someapp/somefile.py
-the `file = open('data.txt', 'r')` block opens a file but never closes it.
-```
-
-**Copilot will**:
-- Open a new issue in the specified repository with a clear title and description
-
-### Demo 3.5 — Review code changes in a pull request
+### Demo 3.3 — Review code changes in a pull request
 
 ```
 Check the changes made in PR https://github.com/HarvirChima/copilot-cli-demo/pull/57575.
@@ -161,7 +140,7 @@ Report any serious errors you find in these changes.
 - Analyze the changes for bugs, security issues, and logic errors
 - Report a summary of problems directly in the CLI
 
-### Demo 3.6 — Manage pull requests
+### Demo 3.4 — Manage pull requests
 
 ```
 Merge all of the open PRs that I've created in HarvirChima/copilot-cli-demo
@@ -173,20 +152,8 @@ Close PR #11 on HarvirChima/copilot-cli-demo
 
 **Talking point**: "You can merge, close, or update PRs without switching to a browser — perfect for batch operations."
 
-### Demo 3.7 — Find specific issues or workflows
 
-```
-Use the GitHub MCP server to find good first issues for a new team member
-to work on from HarvirChima/copilot-cli-demo
-```
-
-> **Note**: If you know that a specific MCP server can achieve a particular task, specifying it in your prompt helps Copilot deliver the results you want.
-
-```
-List any Actions workflows in this repo that add comments to PRs
-```
-
-### Demo 3.8 — Create a GitHub Actions workflow
+### Demo 3.5 — Create a GitHub Actions workflow
 
 ```
 Branch off from main and create a GitHub Actions workflow that will run on
