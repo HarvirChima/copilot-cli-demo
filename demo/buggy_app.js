@@ -105,5 +105,3 @@ console.log("Parsed config (invalid JSON):", parseConfig("not-json"));
 
 deleteUser(3);
 console.log("\nUsers after deleting id=3:", users.map((u) => u.name));
-
-consol.log("This is a typo!");
